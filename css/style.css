@@ -1,0 +1,1617 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family: 'Inter', sans-serif;
+}
+.nav-container{
+    height: 10vh;
+    padding: 0.5rem calc((100vw - 1100px) / 2);
+    z-index: 3;
+}
+.nav-container nav{
+    height: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.nav-container nav .logo{
+    height: 50px;
+    width: 200px;
+}
+
+.nav-container nav .logo img{
+   height: 100%;
+   width: 100%; 
+}
+.nav-container nav .steps-container{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
+    background: #F3F8FC;
+    height: 100%;
+    border-radius: 40px;    
+}
+
+.nav-container nav .steps-container .steps{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-container nav .steps-container .steps:nth-child(3){
+
+}
+.nav-container nav .steps-container .steps span{
+    background: #004E80;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 20px;
+    width: 20px;
+    font-size: 13px;
+    margin-left: 0.5rem;
+    
+}
+.nav-container nav .steps-container .steps p{
+    font-size: 12px;
+}
+
+.nav-container nav .steps-container .steps p:nth-child(2){
+    font-weight: bolder;
+    margin-left: 0.4rem;
+}
+.nav-container nav .steps-container .steps p:nth-child(3){
+    margin-left: 0.4rem;
+}
+.nav-container nav .steps-container .line{
+    height: 2px;
+    width: 23px;
+    background: #004E80;
+}
+
+@media screen and (max-width: 889px){
+    .nav-container{
+        height: 20vh;
+        padding: 0.5rem calc((100vw - 1100px) / 2);
+        z-index: 3;
+    }
+
+    .nav-container nav{
+        height: 100%;
+        display: grid;
+        grid-auto-flow: row;
+        align-items: center;
+        margin: 0 1rem;
+    }
+    .nav-container nav .steps-container .line{
+        height: 0px;
+        width: 0px;
+    }
+    .nav-container nav .logo{
+        height: 50px;
+        width: 200px;
+        justify-self: center;
+    }
+}
+@media screen and (max-width: 500px){
+    .nav-container nav .steps-container .steps p:nth-child(3){
+       display: none;
+       visibility: hidden;
+    }
+    .nav-container nav .logo{
+        height: 50px;
+        width: 200px;
+        justify-self: center;
+    }
+}
+
+
+.main{
+    background: #F3F8FC;
+    height: 125vh;
+    padding: 0.5rem calc((100vw - 1100px) / 2);
+    position: relative;
+}
+.main .content{
+    z-index: 3;
+    width: 700px;
+    position: absolute;
+    top: 90px;
+    margin: 0 1rem;
+}
+.main .content h3{
+    font-size: 45px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+}
+
+.main .content p{
+    font-size: 25px;
+    font-weight: 600;
+    padding: 2rem 0;
+}
+.main .content p span{
+    color: #0065A6;
+}
+.main .write{
+    height: 600px;
+    width: 800px;
+    position: absolute;
+    top:0px;
+    right: 0;
+    z-index: 1;
+}
+
+.main .write img{
+    height: 100%;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 889px){
+    .main .content{
+        z-index: 4;
+        width: 100%;
+        position:unset ;
+        top: 90px;
+        margin: 0;
+        text-align: center;
+    }
+    .main .write{
+        height: 200px;
+        width: 100%;
+        position: unset;
+        top:0;
+        right: 0;
+        z-index: 0;
+   
+    }
+    .main .content h3,
+    .main .content p{
+        margin: 0 1rem;
+    }
+    
+}
+
+.main .upperbox{
+    position: absolute;
+    top: 330px;
+    height: 900px;
+    width: 1100px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 2rem;
+    background: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.main .upperbox .codyimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+}
+
+.main .upperbox .codyimg img{
+    height: 100%;
+    width: 100%;
+}
+
+.main .upperbox .box-content{
+    position: absolute;
+    right: 200px;
+    top: 50px;
+    width: 500px;
+    font-size: 28px;
+    height: 200px;
+}
+
+.main .upperbox .box-content h3{
+    font-weight: bold;
+}
+.main .upperbox .box-content span{
+    font-weight: bolder;
+}
+
+.main .upperbox .bot-container{
+    position: absolute;
+    width: 96%;
+    background: #F3F8FC;
+    bottom: 0px;
+    left: 0px;
+    height: 300px;
+    width: 100%;
+}
+
+.main .upperbox .bot-container .container{
+display: grid;
+grid-auto-flow: column;
+}
+.main .upperbox .bot-container .container .girl-img{
+ height: 240px;
+ width: 450px;   
+}
+.main .upperbox .bot-container .container .girl-img img{
+    height: 100%;
+    width: 100%;
+}
+.main .upperbox .bot-container .container .bot-content{
+    padding: 4rem 4rem;
+}
+
+.main .upperbox .bot-container .container .bot-content h3{
+    font-size: 24px;
+}
+.main .upperbox .bot-container .container .bot-content p{
+    font-size: 22px;
+    color: #0063A8;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 889px){
+  
+.main .upperbox{
+    margin: 0 1rem;
+    position: unset;
+    top: 80px;
+    width: unset;
+    position: relative;
+    z-index: 2;
+    display: grid;
+}   
+.main .upperbox .codyimg{
+    position: unset;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+}
+.main .upperbox .bot-container .container{
+    display: grid;
+    grid-auto-flow: row; 
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}   
+ .main .upperbox .bot-container{
+    height: 450px;
+}
+    .main .upperbox .bot-container .container .bot-content{
+        padding: 2rem 0;
+        padding-left: 2rem;
+        grid-row: 2/3;
+      }
+      .main .upperbox .codyimg{
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: scaleX(-1);
+        height: 200px;
+        width: 100%;
+        z-index: -1;
+
+    }
+
+    .main .upperbox .box-content{
+        position: unset;
+        width: 100%;
+        font-size: 28px;
+        height: 500px;
+        text-align: left;
+      
+    }
+    .main .upperbox .box-content h3{
+        max-width: 350px;
+        padding-right: 10rem;
+    }
+    .main .upperbox .bot-container .container .girl-img{
+        height: 200px;
+        width: 100%;   
+        grid-row: 1/2;
+       }
+       .main .upperbox .bot-container .container .bot-content{
+        padding: 1rem 1rem;
+        margin-bottom: 2rem;
+      }
+      .main .upperbox .bot-container .container .bot-content h3{
+          font-size: 20px;
+      }
+      .main .upperbox .bot-container .container .bot-content p{
+        font-size: 17px;
+        color: #0063A8;
+        font-weight: bold;
+        margin-top: 1rem;
+    }
+
+ 
+}
+.patong{
+    height: 35vh;
+    
+}
+
+ .create{
+    margin-top: 0rem;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/bg-center.png');
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .create .cont{
+    width: 800px;
+    line-height:35px;
+    margin: 0 1rem;
+}
+
+ .create .cont h3{
+    font-size: 26px;
+    font-weight: lighter;
+}
+ .create .cont span{
+    font-weight: bold;
+}
+@media screen and (max-width: 889px){
+    .create{
+        height: unset;
+        padding: 4rem 0;
+    }
+    .create .cont{
+        width: 800px;
+        line-height:35px;
+        margin: 0 1rem;
+        padding: 4rem 0;
+    }
+    
+     .create{
+        margin-top: 0rem;
+    }
+     .create .cont h3{
+        padding: 1rem 1rem;
+        text-align: left;
+    }
+}
+
+.blue-container{
+    width: 100%;
+    position: relative;
+}
+
+
+
+.blue-container .leaves{
+height: 300px;
+width: 1100px;
+position: absolute;
+top: -200px;
+left: 130px;
+background: #F3F8FC;
+}
+
+.blue-container .leaves .leaves-img{
+    width: 100%;
+    height: 100%;
+}
+
+.blue-container .leaves .leaves-img img{
+    height: 100%;
+    width: 500px;
+}
+
+.blue-container .leaves .leaves-content{
+    position: absolute;
+    top: 100px;
+    left: 370px;
+    width: 700px;
+}
+.blue-container .leaves .leaves-content p{
+    font-size: 17px;
+    font-weight: bolder;
+}
+.blue-container .leaves .leaves-content h3{
+    font-size: 28px;
+    font-weight: bolder;
+    margin-top: 1rem;
+    color: #242A3F;
+    font-weight: bold;
+}
+.blue-container .leaves .leaves-content span{
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+.blue-container .veins{
+    height: 500px;
+    width: 100%;
+    background: url('../img/your.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue-container .veins .veins-content{
+    width: 800px;
+    font-size: 22px;
+}   
+.blue-container .veins .veins-content h2{
+    font-weight: lighter;
+}
+
+.blue-container .veins .veins-content span{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 889px){
+    .blue-container .leaves{
+height: 300px;
+width: 1100px;
+position: absolute;
+top: -200px;
+left: 130px;
+background: #F3F8FC;
+}
+    .patong{
+        height: 80vh;
+        
+    }
+    .blue-container{
+        width: 100%;
+        position: relative;
+        position: unset;
+    }
+    .blue-container .veins .veins-content{
+        width: 800px;
+        font-size: 22px;
+        padding: 0 2rem;
+        text-align: left;
+    }   
+.blue-container .leaves{
+    height: unset;
+    width: unset;
+    position: unset;
+    background: #F3F8FC;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+}
+    
+    .blue-container .leaves .leaves-img{
+        width: unset;
+        height: 100%;
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .blue-container .leaves .leaves-img img{
+        height: 100%;
+        width: 100%;
+    }
+    .blue-container .leaves .leaves-content{
+        position: unset;
+        top: 100px;
+        left: 370px;
+        width: 90%;
+        margin: 1rem 1rem;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        text-align: left;
+        padding: 3rem 0;
+    }
+    
+}
+
+@media screen and (max-width: 439px){
+    .patong{
+        height: 80vh;
+        
+    }
+}
+
+
+.blue-container .water{
+    height: 400px;
+    background: white;
+width: 100%;
+position: relative;
+}
+
+.blue-container .water .water-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 500px;
+}
+.blue-container .water .water-img img{
+    height: 100%;
+    width: 100%;
+}
+
+.blue-container .water .water-content{
+   
+    height: 220px;
+    width: 600px;
+    position: absolute;
+    top: 90px;
+    left: 250px;
+}
+
+.blue-container .water .water-content h5{
+    font-size: 18px;
+    color: #0065A6;
+}
+
+.blue-container .water .water-content h3{
+    font-size: 25px;
+    font-weight: lighter;
+    margin-top: 2rem;
+}
+
+.blue-container .water .water-content span{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 889px){
+    
+.blue-container .water{
+    height: unset;
+    background: white;
+width: 100%;
+position: relative;
+}
+    .blue-container .water .water-img{
+        position: unset;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 90%;
+        margin: 0 2rem;
+    }
+    
+.blue-container .water .water-content{
+   
+    height: unset;
+    width: 90%;
+    position: unset;
+    top: 90px;
+    left: 250px;
+    margin: 0 1rem;
+    padding: 2rem 0;
+}
+
+}
+
+ .neuro{
+    height: 360px;
+
+}
+.neuro .neuro-container{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 470px;
+    justify-items: end;
+    position: relative;
+}
+.neuro .neuro-container .yellow{
+    position: absolute;
+  bottom: 10px;
+  right: 380px;
+  height: 200px;
+  width: 200px;
+}
+.neuro .neuro-container .yellow img{
+    height: 100%;
+    width: 100%;
+}
+.neuro .neuro-container .neuro-img{
+    grid-column: 2/3;
+    height: 100%;
+    width: 470px;
+}
+.neuro .neuro-container .neuro-img img{
+    height: 100%;
+    width: 100%;
+}
+.neuro .neuro-container .neuro-content{
+        padding: 2rem 1rem;
+    font-size: 24px;
+    grid-column: 1/2;
+}
+.neuro .neuro-container .neuro-content span{
+    color: #0065A6;
+}
+
+@media screen and (max-width: 1100px){
+
+    .neuro .neuro-container .yellow{
+        display: none;
+    }
+    .neuro{
+        height: unset;
+    
+    }
+.neuro .neuro-container{
+    height: unset;
+    width: unset;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 300px;
+
+}
+
+.neuro .neuro-container .neuro-img{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 100%;
+    width: 90%;
+}
+.neuro .neuro-container .neuro-content{
+    padding: 2rem 1rem;
+font-size: 24px;
+grid-column: 1/2;
+grid-row: 2/3;
+justify-self: start;
+text-align: left;
+}
+}
+
+.offer{
+}
+.offer .offer-container{
+    background: #E9F5FB;
+    margin: 0.5rem 8rem;
+    display: grid;
+    height: 650px;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: 1fr;
+    position: relative;
+}
+
+.offer .offer-container .offer-title{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    padding: 2rem 2rem;
+    background: #E9F5FB;
+}
+
+.offer .offer-container .offer-title h3{
+    font-size: 30px;
+}
+.offer .offer-container .offer-title h4{
+font-size: 20px;
+}
+/* circle */
+
+.offer .offer-container .circle{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background: #E9F5FB;
+    height: 400px;
+    width: 300px;
+    right: 0;
+    position: relative;
+}
+
+.offer .offer-container .circle .circle-img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+.offer .offer-container .circle .circle-img img{
+    height: 100%;
+    width: 100%;
+}
+.offer .offer-container .circle-content{
+width: 80%;
+    z-index: 999;
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+.offer .offer-container .circle-content h4{
+    color: #E8AD32;
+}
+.offer .offer-container .circle-content h3{
+    font-size: 40px;
+    color: white;
+}
+
+.offer .offer-container .buy-container{
+
+    position: absolute;
+    height: 300px;
+    width: 97%;
+    bottom: 50px;
+    left: 19px;
+    z-index: 3;
+background: white;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
+}
+.offer .offer-container .buy-container .bottle{
+    height: 290px;
+    width: 490px;
+    margin: 0.1rem 0.1rem;
+}
+.offer .offer-container .buy-container .bottle img{
+    height: 100%;
+    width: 100%;
+}
+
+.offer .offer-container .buy-container .buy-content{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+}
+.offer .offer-container .buy-container .buy-content .rex{
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    top: -25px;
+    left: 150px;
+}
+.offer .offer-container .buy-container .buy-content .rex img{
+    height: 100%;
+    width: 100%;
+}
+.offer .offer-container .buy-container .buy-content h3{
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+.offer .offer-container .buy-container .buy-content p{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1200px){
+    .offer .offer-container{
+        background: #E9F5FB;
+        margin: 0.5rem 1rem;
+        display: grid;
+        height: unset;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        position: relative;
+    }
+    
+.offer .offer-container .circle{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background: #E9F5FB;
+    height: 100%;
+    width: 90%;
+    right: 0;
+    position: unset;
+    
+    justify-self: center;
+    align-self: center;
+}
+.offer .offer-container .circle .circle-img{
+    transform: rotate(-90deg);;
+    width: 300px;
+    height: 100%;
+    position: unset;
+}
+.offer .offer-container .circle .circle-img img{
+height: 100%;
+width: 100%;
+}
+    .offer .offer-container .offer-title{
+        grid-row: 2/3;
+        grid-column: 1/2;
+        padding: 2rem 2rem;
+        background: #E9F5FB;
+    }
+    .offer .offer-container .buy-container{
+        grid-row: 3/4;
+        grid-column: 1/2;
+        position: unset;
+        height: unset;
+        width: 97%;
+        bottom: 50px;
+        left: 19px;
+        z-index: 3;
+    background: hite;
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        align-items: center;
+        justify-items: center;
+        align-self: center;
+        justify-self: center;
+        margin-bottom: 2rem;
+    }
+    .offer .offer-container .buy-container .buy-content{
+        height: unset;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        position: relative;
+        grid-row: 2/3;
+    }
+    .offer .offer-container .buy-container .bottle{
+        height: unset;
+        width: 90%;
+        margin: 0.1rem 0.1rem;
+        grid-row: 1/2
+    }
+}
+
+.bottles{
+    height: 890px;
+    margin: 0 9rem;
+    position: relative;
+}
+.bottles .bottle-container h3{
+    font-size: 28px;
+    padding: 1rem 5rem;
+    text-align: center;
+    line-height: 40px;
+    
+}
+
+.bottles .bottle-container p{
+    font-size: 22px;
+    text-align: center;
+    color: #0065A6;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.bottles .eight{
+position: absolute;
+bottom: -250px;
+left: 50%;
+transform: translate(-50%);
+background: #F3F8FC;
+display: grid;
+}
+
+.bottles .eight .upgrade{
+    font-size: 25px;
+    padding: 1rem 1rem;
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+.bottles .eight .upgrade p:nth-child(2){
+font-size: 45px;
+color: black;
+}
+.bottles .eight .price{
+    padding: 0 2rem;
+    width: 470px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px 280px 1fr;
+    padding-bottom: 2rem;
+}
+.bottles .eight .price:nth-child(2){
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.bottles .eight .price:nth-child(3){
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.bottles .eight .price .buy{
+grid-column: 1/2;
+grid-row: 1/2;
+position: relative;
+text-align: left;
+background: white;
+padding: 1rem 1rem;
+}
+.bottles .eight .price .buy p{
+    text-align: left;
+}
+.bottles .eight .price .buy .save{
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    background: #194B6C;
+    border-radius: 100px;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 9;
+}
+.bottles .eight .price .buy .save h4:nth-child(1){
+    color: #E8AD32;
+}
+.bottles .eight .price .my-bottle-img{
+    height: 100%;
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    position: relative;
+    background: white;
+}
+
+.bottles .eight .price .my-bottle-img img{
+    height:100%;
+    width: 100%;
+}
+.bottles .eight .price .my-bottle-img .dollar{
+position: absolute;
+bottom: 0;
+left: 200px;
+font-size: 30px;
+}
+.bottles .eight .price .my-bottle-img{
+    height: 100%;
+    width: 100%;
+}
+.bottles .eight .price .my-bottle-img .ship{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    height: 130px;
+    width: 130px;
+    background: #194B6C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.bottles .eight .price .my-bottle-img .ship h4{
+font-size: 20px;
+text-align: center;
+padding: 0.5rem;
+color: #E8AD32;
+}
+.bottles .eight .price .my-bottle-img .ship .mytruck{
+    height: 30px;
+    width: 30px;
+}
+
+
+.bottles .eight .price .my-bottle-img .ship .mytruck img{
+    height: 100%;
+    width: 100%;
+}
+.bottles .eight .price .money-back{
+    
+    grid-row: 3/4;
+    grid-column: 1/2;
+    background: white;
+    display: grid;
+    justify-items: center;
+}
+.bottles .eight .price .money-back h3{
+    font-size: 21px;
+}
+.bottles .eight .price .money-back .btn-yellow{
+    height: 60px;
+    width: 300px;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+.bottles .eight .price .money-back .btn-yellow img{
+    height: 100%;
+    width: 100%;
+}
+
+.bottles .eight .price .money-back .safe{
+    background: #F3F8FC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+
+.bottles .eight .price .money-back .safe-img{
+    height: 80px;
+    width: 230px;
+}
+.bottles .eight .price .money-back .safe-img img{
+    height: 100%;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1200px){
+  
+
+        .bottles .eight .price{
+            padding: uunset;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 90px 280px 1fr;
+            padding-bottom: unset;
+        }
+        .bottles .eight .price:nth-child(2){
+            grid-row: 2/3;
+            grid-column: 1/2;
+            padding: 0;
+        }
+        .bottles .eight .price:nth-child(3){
+            grid-row: 3/4;
+            grid-column: 1/2;
+            padding: 0;
+  
+        }
+        
+.bottles{
+    height: unset;
+    margin: 0 0rem;
+    position: unset;
+    width: 100%;
+}
+
+.bottles .bottle-container h3{
+    font-size: 28px;
+    padding: 1rem 1rem;
+    text-align: center;
+    line-height: 40px;
+    
+}
+
+.bottles .bottle-container p{
+    font-size: 22px;
+    text-align: center;
+    color: #0065A6;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+.bottles .bottle-container{
+
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 2rem;
+
+}
+.bottles .bottle-container h3{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.bottles .bottle-container p{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.bottles .eight{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    width: 90%;
+    position: unset;
+    background: #F3F8FC;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;  
+    bottom: unset;
+    transform: unset;
+left: unset;  
+}
+
+.bottles .eight .price .my-bottle-img .dollar{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 30px;
+    }
+    
+}
+
+.promise{
+    background: url('/img/science-bg.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.promise .promise-container {
+    text-align: center;
+    margin-top: 280px;
+    padding-bottom: 3rem;
+}
+.promise .promise-container .promise-content{
+    width: 760px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.promise .promise-container .promise-content h3{
+   padding: 1rem 3rem;
+   font-size: 30px;
+}
+.promise .promise-container .promise-content p{
+font-size: 20px;
+padding: 0rem 3rem;
+padding-bottom: 3rem;
+}
+.promise .promise-container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.promise .promise-container .vegan{
+    display: grid;
+    grid-auto-flow: column;
+
+}
+.promise .promise-container .vegan .two{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    margin: 0 2rem;
+}
+.promise .promise-container .vegan .two p{
+    color: white;
+    padding: 1rem 1rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1200px){
+    .promise .promise-container {
+        text-align: center;
+        margin-top: unset;
+        padding-bottom: unset;
+    }
+    .promise .promise-container .promise-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .promise .promise-container .promise-content h3{
+        padding: 1rem 1rem;
+        font-size: 30px;
+     }
+     .promise .promise-container .promise-content p{
+     font-size: 20px;
+     padding: 1rem 1rem;
+     padding-bottom: unset;
+     }
+     .promise .promise-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        align-items: center;
+        justify-items: center;
+    }
+    .promise .promise-container .vegan{
+        grid-row: 2/3;
+        grid-column: 1/2;
+        display: grid;
+        grid-auto-flow: row;
+        margin: 1rem;
+    
+    }
+    .promise .promise-container .vegan .two{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 1rem 0rem;
+    }
+    .promise .promise-container .vegan .two p{
+        color: white;
+        padding: 1rem 1rem;
+        font-weight: bold;
+    }
+}
+
+.guarantee{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guarantee .guarantee-container{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: 1fr;
+    position: relative;
+    margin: 0 8rem;
+    background: white;
+}
+
+.guarantee .guarantee-container .guarantee-img{
+    height: 100%;
+    width: 400px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.guarantee .guarantee-container .guarantee-content{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.guarantee .guarantee-container .guarantee-content h3{
+    font-size: 40px;
+    padding: 3rem 1rem;
+}
+.guarantee .guarantee-container .guarantee-content p{
+    font-size: 23px;
+    padding: 0rem 1rem;
+    font-weight: bold;
+}
+.guarantee .guarantee-container .guarantee-content p:nth-child(3){
+    font-size: 20px;
+    padding: 2rem 1rem;
+    font-weight: lighter;
+}
+.guarantee .guarantee-container .guarantee-img img{
+    height: 100%;
+    width: 100%;
+}
+.guarantee .guarantee-container .yellow-logo{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    right: 170px;
+    top: 200px;
+}
+
+.guarantee .guarantee-container .yellow-logo img{
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px){
+    .guarantee .guarantee-container{
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+        grid-template-rows:400px 1fr;
+        position: relative;
+        margin: 0 0rem;
+        background: white;
+        width: 90%;
+    }
+    .guarantee .guarantee-container .guarantee-img{
+        height: 400px;
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .guarantee .guarantee-container .guarantee-content{
+        grid-column: 1/2;
+        grid-row: 2/3;
+
+    }
+    .guarantee .guarantee-container .yellow-logo{
+        height: 250px;
+        width: 250px;
+        position: absolute;
+        right: 130px;
+        top: 200px;
+    }
+    
+}
+/* 2nd bottle */
+.bottles.none{
+    display: none;
+    opacity: 0;
+}
+.bottless{
+    height: 890px;
+    margin: 0 9rem;
+    position: relative;
+}
+.bottless .bottle-container h3{
+    font-size: 28px;
+    padding: 1rem 5rem;
+    text-align: center;
+    line-height: 40px;
+    
+}
+
+.bottless .bottle-container p{
+    font-size: 22px;
+    text-align: center;
+    color: #0065A6;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.bottless .eight{
+position: absolute;
+bottom: -250px;
+left: 50%;
+transform: translate(-50%);
+background: #F3F8FC;
+display: grid;
+}
+
+.bottless .eight .upgrade{
+    font-size: 25px;
+    padding: 1rem 1rem;
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+.bottless .eight .upgrade p:nth-child(2){
+font-size: 45px;
+color: black;
+}
+.bottless .eight .price{
+    padding: 0 2rem;
+    width: 470px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px 280px 1fr;
+    padding-bottom: 2rem;
+}
+.bottless .eight .price:nth-child(2){
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.bottless .eight .price:nth-child(3){
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.bottless .eight .price .buy{
+grid-column: 1/2;
+grid-row: 1/2;
+position: relative;
+text-align: left;
+background: white;
+padding: 1rem 1rem;
+}
+.bottless .eight .price .buy p{
+    text-align: left;
+}
+.bottless .eight .price .buy .save{
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    background: #194B6C;
+    border-radius: 100px;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 9;
+}
+.bottless .eight .price .buy .save h4:nth-child(1){
+    color: #E8AD32;
+}
+.bottless .eight .price .my-bottle-img{
+    height: 100%;
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    position: relative;
+    background: white;
+}
+
+.bottless .eight .price .my-bottle-img img{
+    height:100%;
+    width: 100%;
+}
+.bottles .eight .price .my-bottle-img .dollar{
+position: absolute;
+bottom: 0;
+left: 200px;
+font-size: 30px;
+}
+.bottless .eight .price .my-bottle-img{
+    height: 100%;
+    width: 100%;
+}
+.bottless .eight .price .my-bottle-img .ship{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    height: 130px;
+    width: 130px;
+    background: #194B6C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.bottless .eight .price .my-bottle-img .ship h4{
+font-size: 20px;
+text-align: center;
+padding: 0.5rem;
+color: #E8AD32;
+}
+.bottless .eight .price .my-bottle-img .ship .mytruck{
+    height: 30px;
+    width: 30px;
+}
+
+
+.bottles .eight .price .my-bottle-img .ship .mytruck img{
+    height: 100%;
+    width: 100%;
+}
+.bottles .eight .price .money-back{
+    
+    grid-row: 3/4;
+    grid-column: 1/2;
+    background: white;
+    display: grid;
+    justify-items: center;
+}
+.bottles .eight .price .money-back h3{
+    font-size: 21px;
+}
+.bottles .eight .price .money-back .btn-yellow{
+    height: 60px;
+    width: 300px;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+.bottles .eight .price .money-back .btn-yellow img{
+    height: 100%;
+    width: 100%;
+}
+
+.bottles .eight .price .money-back .safe{
+    background: #F3F8FC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+
+.bottles .eight .price .money-back .safe-img{
+    height: 80px;
+    width: 230px;
+}
+.bottles .eight .price .money-back .safe-img img{
+    height: 100%;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1200px){
+    .bottles.none{
+        display: block;
+        opacity: 1;
+    }
+
+        .bottles .eight .price{
+            padding: uunset;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 90px 280px 1fr;
+            padding-bottom: unset;
+        }
+        .bottles .eight .price:nth-child(2){
+            grid-row: 2/3;
+            grid-column: 1/2;
+            padding: 0;
+        }
+        .bottles .eight .price:nth-child(3){
+            grid-row: 3/4;
+            grid-column: 1/2;
+            padding: 0;
+  
+        }
+        
+.bottles{
+    height: unset;
+    margin: 0 0rem;
+    position: unset;
+    width: 100%;
+}
+
+.bottles .bottle-container h3{
+    font-size: 28px;
+    padding: 1rem 1rem;
+    text-align: center;
+    line-height: 40px;
+    
+}
+
+.bottles .bottle-container p{
+    font-size: 22px;
+    text-align: center;
+    color: #0065A6;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+.bottles .bottle-container{
+
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 2rem;
+
+}
+.bottles .bottle-container h3{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.bottles .bottle-container p{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.bottles .eight{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    width: 90%;
+    position: unset;
+    background: #F3F8FC;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;  
+    bottom: unset;
+    transform: unset;
+left: unset;  
+}
+
+.bottles .eight .price .my-bottle-img .dollar{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 30px;
+    }
+    
+}
